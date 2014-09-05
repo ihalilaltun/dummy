@@ -56,6 +56,11 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
         stopAgentBtn.setVisible(false);
         tailBtn.setVisible(false);
         reloadBtn.setVisible(false);
+        try {
+            setIconImage(ImageIO.read(new File("res/favicon.ico")));
+        } catch (IOException ex) {
+            Logger.getLogger(RemoteManagementWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -473,12 +478,18 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
 
         About f = new About();
         try {
-            f.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("res/splash.jpg")))));
+            f.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("res/bg.png")))));
             f.add(f.jButton1);
             f.add(f.jTextField1);
         } catch (IOException e) {
         }
         f.pack();
+        f.setTitle("About");
+        try {
+            f.setIconImage(ImageIO.read(new File("res/favicon.ico")));
+        } catch (IOException ex) {
+            Logger.getLogger(RemoteManagementWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
         f.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
