@@ -20,8 +20,6 @@ public class RemoteManagement {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
         new RemoteManagementWindow().setVisible(true);
-
     }
 }
