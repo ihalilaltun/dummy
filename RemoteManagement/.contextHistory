@@ -1,0 +1,7 @@
+<?xml version='1.0' ?>
+  <com.remotemanagement.dbContext.ContextHistory>
+    <lastContext>jdbc:oracle:thin:@localhost:1521:ORCL</lastContext>
+    <password>+avokx91WYajrGqMJGScqg==</password>
+    <url>jdbc:oracle:thin:@localhost:1521:ORCL</url>
+    <username>evam_3_1_7</username>
+  </com.remotemanagement.dbContext.ContextHistory>
