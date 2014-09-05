@@ -115,10 +115,10 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
 
         jLabel2.setText("Password:");
 
-        userNameFl.setText("ibrahimhalilaltun");
+        userNameFl.setText("evam");
         userNameFl.setPreferredSize(new java.awt.Dimension(150, 22));
 
-        passwordFl.setText("scpm4let");
+        passwordFl.setText("evam123");
 
         loginOkBtn.setText("OK");
         loginOkBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -562,7 +562,7 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
             avaliableAgentsList.setModel(new DefaultListModel());
             jList1.clearSelection();
             e.printStackTrace();
-            
+
         }
 
         DefaultListModel<String> model = new DefaultListModel<>();
@@ -795,7 +795,7 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -814,6 +814,12 @@ public class RemoteManagementWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                }
+
                 new RemoteManagementWindow().setVisible(true);
             }
         });

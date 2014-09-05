@@ -38,8 +38,6 @@ public class CheckSelectedListenerCommand implements ExecutableCommand {
         command.append(CHECK_COMMAND);
         command.append(BLANK);
         command.append(agentNo);
-
-        System.out.print(command);
         return command.toString();
     }
 }
