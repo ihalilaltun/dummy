@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Score>
+   <Producer>
+      <Name> SAS Enterprise Miner </Name>
+      <Version> 6.1 </Version>
+   </Producer>
+   <TargetList>
+   </TargetList>
+   <JavaClass>
+      <ClassName>
+            eminer.user.Score.Score
+      </ClassName>
+      <Constructor> Score  </Constructor>
+      <Method>
+         <Name> score </Name>
+         <Parameter> java.util.Map </Parameter>
+         <Returns> java.util.Map </Returns>
+         <Throws>
+            com.sas.analytics.eminer.jscore.util.JscoreException
+         </Throws>
+      </Method>
+   </JavaClass>
+   <Input count="16">
+      <Variable index="0">
+         <Name> AVG_CC_REVENUE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="1">
+         <Name> AVG_PACK_SMS_REVENUE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="2">
+         <Name> AVG_TOTALMF_REVENUE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="3">
+         <Name> AVG_WOPACK_DATA_REVENUE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="4">
+         <Name> B_CC_INV </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="5">
+         <Name> B_CROSS_PORT </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="6">
+         <Name> B_EXT_ELIGIBLE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="7">
+         <Name> B_LAST_ACT_PORTIN </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="8">
+         <Name> B_MNP_ATTACK_L3M </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="9">
+         <Name> B_TARIFFDATA_3M </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="10">
+         <Name> G_INV_INC_AMT_AVG </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="11">
+         <Name> G_RPM_AMT </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="12">
+         <Name> G_TENURE </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="13">
+         <Name> G_WTP_ASIM_3M </Name>
+         <Type> double </Type>
+      </Variable>
+      <Variable index="14">
+         <Name> SEGMENT </Name>
+         <Type length="32"> char </Type>
+      </Variable>
+      <Variable index="15">
+         <Name> TOTAL_GROSS_REVENUE_M1 </Name>
+         <Type> double </Type>
+      </Variable>
+   </Input>
+   <Output count="16">
+      <Variable index="0">
+         <Name> D_TARGET </Name>
+         <Type length="9"> char </Type>
+         <Description>
+            <![CDATA[Decision: TARGET]]>
+         </Description>
+      </Variable>
+      <Variable index="1">
+         <Name> EM_CLASSIFICATION </Name>
+         <Type length="32"> char </Type>
+         <Description>
+            <![CDATA[Prediction for target]]>
+         </Description>
+      </Variable>
+      <Variable index="2">
+         <Name> EM_EVENTPROBABILITY </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Probability for level 1 of target]]>
+         </Description>
+      </Variable>
+      <Variable index="3">
+         <Name> EM_PROBABILITY </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Probability of Classification]]>
+         </Description>
+      </Variable>
+      <Variable index="4">
+         <Name> EM_SEGMENT </Name>
+         <Type length="5"> char </Type>
+         <Description>
+            <![CDATA[Segment]]>
+         </Description>
+      </Variable>
+      <Variable index="5">
+         <Name> EP_TARGET </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Expected Profit: TARGET]]>
+         </Description>
+      </Variable>
+      <Variable index="6">
+         <Name> I_TARGET </Name>
+         <Type length="12"> char </Type>
+         <Description>
+            <![CDATA[Into: target]]>
+         </Description>
+      </Variable>
+      <Variable index="7">
+         <Name> LOG_AVG_CC_REVENUE </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Transformed avg_cc_revenue]]>
+         </Description>
+      </Variable>
+      <Variable index="8">
+         <Name> LOG_AVG_PACK_SMS_REVENUE </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Transformed avg_pack_sms_revenue]]>
+         </Description>
+      </Variable>
+      <Variable index="9">
+         <Name> LOG_TOTAL_GROSS_REVENUE_M1 </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Transformed total_gross_revenue_m1]]>
+         </Description>
+      </Variable>
+      <Variable index="10">
+         <Name> PWR_AVG_WOPACK_DATA_REVENUE </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Transformed avg_wopack_data_revenue]]>
+         </Description>
+      </Variable>
+      <Variable index="11">
+         <Name> P_TARGET0 </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Predicted: target=0]]>
+         </Description>
+      </Variable>
+      <Variable index="12">
+         <Name> P_TARGET1 </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Predicted: target=1]]>
+         </Description>
+      </Variable>
+      <Variable index="13">
+         <Name> SQRT_AVG_TOTALMF_REVENUE </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Transformed avg_totalmf_revenue]]>
+         </Description>
+      </Variable>
+      <Variable index="14">
+         <Name> U_TARGET </Name>
+         <Type> double </Type>
+         <Description>
+            <![CDATA[Unnormalized Into: target]]>
+         </Description>
+      </Variable>
+      <Variable index="15">
+         <Name> _WARN_ </Name>
+         <Type length="4"> char </Type>
+         <Description>
+            <![CDATA[Warnings]]>
+         </Description>
+      </Variable>
+   </Output>
+</Score>
